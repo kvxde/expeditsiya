@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Экспедиция — ресторан северной кухни в Москве</title>
+<meta name="description" content="Ресторан северной кухни «Экспедиция» в Москве: строганина, оленина, рыба на углях, настойки. Всё по-настоящему, сделано и добыто своими руками. Бронь стола онлайн.">
+<meta property="og:title" content="Экспедиция. Северная кухня">
+<meta property="og:description" content="Ресторан, где всё по-настоящему. Бронь стола онлайн.">
+<meta property="og:type" content="restaurant">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Courier+Prime:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:wght@500;700&subset=cyrillic&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Экспедиция. Северная кухня","servesCuisine":"Северная кухня","address":{"@type":"PostalAddress","streetAddress":"ул. Северная, 12","addressLocality":"Москва","addressCountry":"RU"},"telephone":"+74950000000","priceRange":"₽₽₽","openingHours":"Mo-Su 12:00-24:00"}</script>
+<style>
+:root{--parch:#E9DCC3;--leather:#2B1D14;--paper:#F3EAD7;--ink:#3B2A1E;--choc:#4A2F1D;--copper:#A0522D;--brass:#B08D57;--ice:#7E8F94;--err:#8C3B1F;--p:0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--leather);color:var(--ink);font:18px/1.6 'PT Serif',Georgia,serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display SC','Playfair Display',Georgia,serif;color:var(--choc);line-height:1.15;margin:0 0 .5em;font-weight:700}
+h2{font-size:clamp(28px,4.5vw,44px)}h3{font-size:22px}
+p{margin:0 0 1em;max-width:62ch}
+a{color:var(--copper)}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.hand{font-family:Caveat,'Marck Script',cursive;font-size:1.45em;color:var(--copper);line-height:1.1}
+.mono{font-family:'Courier Prime','PT Mono',monospace}
+.wrap{width:min(1120px,100% - 40px);margin:auto}
+section{padding:96px 0;position:relative}
+.light{background:var(--parch) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .2 0 0 0 0 .1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.dark{background:var(--leather);color:var(--paper)}
+.dark h2,.dark h3{color:var(--paper)}.dark .hand{color:var(--brass)}.dark a{color:var(--brass)}
+.btn{display:inline-block;font:700 16px/1 'PT Serif',serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:2px solid var(--copper);background:var(--copper);color:var(--paper);padding:16px 26px;border-radius:3px;box-shadow:inset 0 1px 0 #ffffff40,0 3px 0 #5e2e19;transition:box-shadow .25s,transform .15s,background .25s}
+.btn:hover{box-shadow:inset 0 1px 0 #ffffff40,0 3px 0 #5e2e19,0 0 22px #d0793f99}
+.btn:active{transform:translateY(2px);box-shadow:inset 0 2px 4px #0006}
+.btn.alt{background:transparent;color:var(--paper);border-color:var(--brass);box-shadow:none}
+.light .btn.alt{color:var(--choc)}
+.btn.alt:hover{box-shadow:0 0 18px #b08d5766}
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;padding:env(safe-area-inset-top,0px) 0 0;color:var(--paper);border-bottom:1px solid #b08d5766}
+header::before{content:"";position:absolute;inset:0;z-index:-1;background:#2b1d14ee;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+header::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:calc(var(--p)*100%);background:repeating-linear-gradient(90deg,var(--brass) 0 8px,transparent 8px 13px)}
+.bar{display:flex;align-items:center;gap:20px;height:68px}
+.logo{margin-right:auto;text-decoration:none;color:var(--paper);text-align:center;line-height:1}
+.logo b{display:block;font:700 22px 'Playfair Display SC',Georgia,serif;letter-spacing:.16em}
+.logo small{font:italic 12px 'PT Serif',serif;color:var(--brass);letter-spacing:.1em}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+nav a{color:var(--paper);text-decoration:none;letter-spacing:.08em;text-transform:uppercase;font-size:14px;padding:6px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current=true]{border-color:var(--brass)}
+.burger{display:none;background:none;border:1px solid var(--brass);color:var(--paper);width:46px;height:46px;border-radius:3px;font-size:22px;cursor:pointer}
+.bar .btn{padding:12px 18px;font-size:13px}
+
+/* hero */
+#top{min-height:100svh;padding:0;display:flex;align-items:center;overflow:hidden;background:#1b1410;color:var(--paper)}
+#scene{position:absolute;inset:0;width:100%;height:100%}
+#snow{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero{position:relative;z-index:2;text-align:center;padding:120px 0 26vh}
+.hero h1{color:var(--paper);font-size:clamp(40px,8vw,84px);letter-spacing:.06em;text-shadow:0 2px 24px #000a;margin:.1em 0 0}
+.hero h1 span{display:block;font:italic 400 clamp(20px,3.4vw,34px) 'PT Serif',serif;letter-spacing:.3em;color:var(--brass);margin-top:.3em;text-transform:lowercase}
+.hero .sub{font-size:22px;margin:18px auto 30px;text-align:center}
+.hero .hand{min-height:1.4em;color:#e3c58f}
+.hero .acts{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+#compass{position:absolute;z-index:2;right:max(20px,4vw);top:100px;width:clamp(64px,9vw,120px)}
+#ring{transform-origin:50px 50px;animation:spin 120s linear infinite}
+#needle{transform-origin:50px 50px;transition:transform .4s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.fl{transform-box:fill-box;transform-origin:50% 100%;animation:fl 1.1s ease-in-out infinite alternate}
+.fl:nth-child(2){animation-duration:.8s}.fl:nth-child(3){animation-duration:1.4s}
+@keyframes fl{from{transform:scale(1,.85) skewX(-3deg)}to{transform:scale(.92,1.08) skewX(3deg)}}
+#glow{animation:gl 2s ease-in-out infinite alternate}@keyframes gl{from{opacity:.6}to{opacity:1}}
+/* rail */
+#rail{position:fixed;left:18px;top:50%;transform:translateY(-50%);height:56vh;width:14px;z-index:40;display:none}
+#rail::before,#rail i{content:"";position:absolute;left:6px;top:0;width:0;border-left:2px dashed #b08d5766;height:100%}
+#rail i{border-color:var(--copper);height:calc(var(--p)*100%)}
+#rail a{position:absolute;left:0;width:14px;height:14px;border-radius:50%;background:var(--paper);border:2px solid var(--brass);transform:translateY(-50%)}
+#rail a[aria-current=true]{background:var(--copper);transform:translateY(-50%) scale(1.3)}
+#rail a span{position:absolute;left:24px;top:50%;transform:translateY(-50%);white-space:nowrap;font:14px 'PT Serif';background:var(--leather);color:var(--paper);padding:3px 9px;border-radius:2px;opacity:0;pointer-events:none;transition:opacity .2s}
+#rail a:hover span,#rail a:focus-visible span{opacity:1}
+/* content */
+.manifest{font:italic 400 clamp(22px,3.2vw,34px)/1.4 'Playfair Display',Georgia,serif;color:var(--choc);max-width:24em;margin:0 0 .6em}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:48px}
+.frame{background:var(--paper);border:3px double var(--brass);padding:28px;position:relative}
+.frame svg{width:44px;height:44px;stroke:var(--ice);fill:none;stroke-width:1.7;margin-bottom:8px}
+.frame p{margin:0}
+.diary{display:grid;gap:28px;margin-top:40px;position:relative}
+.diary::before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:2px dashed var(--brass);opacity:.5}
+.page{background:var(--paper);color:var(--ink);padding:24px 28px;width:min(500px,calc(50% - 30px));border:3px double var(--brass);box-shadow:0 10px 24px #0007;position:relative}
+.page:nth-child(odd){justify-self:start;transform:rotate(-1deg)}.page:nth-child(even){justify-self:end;transform:rotate(1deg)}
+.page h3{color:var(--choc);font-size:20px;margin:0 0 .3em}.page p{margin:0}
+.page .hand{display:block;font-size:1.3em}
+.stampq{margin:56px auto 0;width:max-content;max-width:100%;border:3px double var(--copper);color:var(--copper);padding:14px 30px;font:700 clamp(20px,3vw,30px) 'Playfair Display SC',serif;letter-spacing:.1em;transform:rotate(-3deg);text-align:center}
+.carry{list-style:none;padding:0;margin:48px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.carry li{border-top:2px solid var(--brass);padding-top:12px}.carry b{display:block;font-family:'Playfair Display',serif;font-size:19px;color:var(--paper)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}
+.chip{font:16px 'PT Serif',serif;cursor:pointer;background:var(--paper);color:var(--choc);border:1px solid var(--brass);padding:9px 16px;border-radius:30px}
+.chip[aria-pressed=true]{background:var(--choc);color:var(--paper);border-color:var(--choc)}
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:24px;perspective:1200px}
+.card{height:270px;border:0;padding:0;background:none;text-align:left;cursor:pointer;font:inherit;color:inherit;transition:transform .3s,filter .3s}
+.card:hover{transform:rotate(-1.6deg);filter:drop-shadow(0 12px 12px #3b2a1e55)}
+.in{position:relative;width:100%;height:100%;transition:transform .7s;transform-style:preserve-3d}
+.card.flip .in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;background:var(--paper);border:3px double var(--brass);padding:20px 22px;display:flex;flex-direction:column;overflow:hidden}
+.back{transform:rotateY(180deg);background:#efe2c8}
+.face h3{margin:2px 0 6px;font-size:20px}.face p{font-size:16px;line-height:1.45;margin:0}
+.face .meta{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:8px}
+.price{font:700 20px 'Courier Prime',monospace;color:var(--choc)}.wt{font:14px 'Courier Prime',monospace;color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.tag{font-size:12px;border:1px solid var(--ice);color:#4f6166;padding:1px 8px;border-radius:2px}.tag.f{border-color:var(--copper);color:var(--copper);font-weight:700}
+.hint{font-size:13px;color:#6b5a4a;margin-top:6px}
+#empty{display:none;padding:30px;border:2px dashed var(--brass);text-align:center}
+.menu-extra{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:36px}
+.zones{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin:36px 0}
+.zones div{border-left:3px solid var(--brass);padding-left:16px}
+.events{columns:2 300px;margin:0 0 30px;padding-left:20px}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:36px}
+.mem{background:var(--paper);border:3px double var(--brass);padding:22px}
+.seal{width:76px;height:76px;border:3px double var(--copper);border-radius:50%;display:grid;place-items:center;font:700 30px 'Playfair Display SC',serif;color:var(--copper);margin-bottom:12px;transform:rotate(-6deg)}
+.mem q{font-style:italic;display:block;margin-top:10px}
+/* forms */
+.formbox{background:var(--paper);color:var(--ink);border:3px double var(--brass);padding:clamp(22px,4vw,44px);display:grid;gap:34px;grid-template-columns:1fr 1.3fr}
+.formbox h2{color:var(--choc)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.f{display:flex;flex-direction:column;gap:4px}.f.w{grid-column:1/-1}
+label{font-size:15px;color:var(--choc);font-weight:700}
+input,select,textarea{font:17px 'PT Serif',serif;padding:11px 12px;border:1px solid var(--brass);background:#fffaf0;color:var(--ink);border-radius:2px;width:100%}
+input[aria-invalid=true],select[aria-invalid=true]{border:2px solid var(--err)}
+.er{color:var(--err);font-size:14px;min-height:1em}
+.chk{flex-direction:row;align-items:flex-start;gap:10px}.chk input{width:22px;height:22px;margin-top:3px}.chk label{font-weight:400}
+.ok{display:none;border:2px solid var(--copper);padding:26px;background:#fffaf0}.ok p{font:italic 22px 'Playfair Display',serif;color:var(--choc)}
+.side p{margin:0 0 .6em}
+.mapbox{background:var(--paper);border:3px double var(--brass);margin-top:20px}.mapbox svg{display:block;width:100%;height:auto}
+.contacts{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.contacts dl{margin:0}.contacts dt{font-weight:700;color:var(--choc);margin-top:14px}.contacts dd{margin:0}
+footer{background:var(--leather);color:var(--paper);padding:56px 0 40px;text-align:center}
+footer .logo b{font-size:28px}footer p{margin:6px auto;text-align:center;max-width:none}
+footer button{background:none;border:0;color:var(--brass);text-decoration:underline;font:inherit;cursor:pointer}
+footer a{color:var(--brass)}
+.demo{font-size:14px;color:#c9b99d}
+dialog{border:3px double var(--brass);background:var(--paper);color:var(--ink);padding:28px;width:min(560px,calc(100% - 28px));max-height:90svh;overflow:auto}
+dialog::backdrop{background:#1b1410cc}
+dialog form{grid-template-columns:1fr 1fr}
+.x{float:right;background:none;border:1px solid var(--brass);width:40px;height:40px;font-size:20px;cursor:pointer;color:var(--choc)}
+#cookie{position:fixed;left:16px;right:16px;bottom:16px;max-width:460px;z-index:60;background:var(--leather);color:var(--paper);border:1px solid var(--brass);padding:16px 18px;display:none;gap:14px;align-items:center;font-size:15px}
+#cookie .btn{padding:10px 16px;font-size:13px}
+#toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);background:var(--choc);color:var(--paper);padding:12px 20px;border:1px solid var(--brass);opacity:0;pointer-events:none;transition:.3s;z-index:70;max-width:90vw;text-align:center}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.mbar{display:none}
+#pm{display:none}
+@media print{body{background:#fff}header,main,footer,.mbar,dialog,#cookie,#toast,#rail{display:none!important}#pm{display:block;color:#000;font:13pt/1.5 'PT Serif',serif}#pm h1{font-size:26pt;color:#000}#pm h2{font-size:17pt;margin:18pt 0 6pt;border-bottom:1px solid #000;color:#000}#pm p{margin:0 0 5pt;max-width:none}#pm .r{display:flex;justify-content:space-between;gap:12pt;margin-bottom:5pt}#pm small{font-size:10pt}}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .6s,transform .6s}.js .rv.in2{opacity:1;transform:none}
+@media(min-width:1100px){#rail{display:block}}
+@media(max-width:900px){
+ .burger{display:block}.bar>.btn{display:none}
+ nav{display:none;position:fixed;inset:0;background:var(--paper);padding:100px 28px 40px;overflow:auto;z-index:-1}
+ nav.open{display:block;animation:pg .35s ease-out}
+ @keyframes pg{from{opacity:0;transform:translateY(-14px)}}
+ .logo,.burger{position:relative}.burger svg{display:block;margin:auto}
+ header.open .logo{color:var(--choc)}header.open .logo small{color:var(--copper)}header.open .burger{color:var(--choc);border-color:var(--copper)}
+ nav ul{flex-direction:column;gap:6px}nav a{color:var(--choc);font:700 clamp(30px,9vw,44px) 'Playfair Display SC',serif;letter-spacing:.04em;text-transform:none;border-bottom:1px dashed var(--brass);display:block;padding:10px 0}
+ .formbox,.contacts{grid-template-columns:1fr}
+ .diary::before{left:8px}.page,.page:nth-child(n){width:calc(100% - 28px);justify-self:end;transform:none}
+ section{padding:72px 0}
+ .mbar{display:flex;position:fixed;inset:auto 0 0 0;z-index:45;background:var(--leather);border-top:1px solid var(--brass);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));gap:10px}
+ .mbar .btn{flex:1;text-align:center;padding:14px 8px;font-size:14px}
+ footer{padding-bottom:100px}#cookie{bottom:82px}
+}
+@media(max-width:560px){form,dialog form{grid-template-columns:1fr}.hero{padding-bottom:22vh}#compass{top:84px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap bar">
+  <a class="logo" href="#top" aria-label="Экспедиция — на главную"><b>ЭКСПЕДИЦИЯ</b><small>северная кухня</small></a>
+  <nav id="nav" aria-label="Основная навигация">
+   <ul>
+    <li><a href="#history">История</a></li><li><a href="#menu">Меню</a></li><li><a href="#space">Пространство</a></li><li><a href="#team">Команда</a></li><li><a href="#contacts">Контакты</a></li>
+   </ul>
+  </nav>
+  <a class="btn" href="#booking">Забронировать</a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+ </div>
+</header>
+<nav id="rail" aria-label="Маршрут по странице"><i></i></nav>
+
+<main>
+<section id="top" aria-label="Базовый лагерь">
+ <svg id="scene" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <defs>
+   <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14100d"/><stop offset=".55" stop-color="#3a2a20"/><stop offset="1" stop-color="#8a5a38"/></linearGradient>
+   <linearGradient id="au" x1="0" x2="1"><stop offset="0" stop-color="#b08d57" stop-opacity="0"/><stop offset=".5" stop-color="#c9a870" stop-opacity=".22"/><stop offset="1" stop-color="#7e8f94" stop-opacity="0"/></linearGradient>
+   <radialGradient id="fg"><stop offset="0" stop-color="#ff9a3c" stop-opacity=".75"/><stop offset="1" stop-color="#ff9a3c" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1440" height="800" fill="url(#sky)"/>
+  <path d="M0 220C300 120 500 300 800 190S1200 120 1440 230V330C1100 250 900 380 600 290S200 280 0 330Z" fill="url(#au)"/>
+  <g id="L1" data-s=".05"><path id="r1" fill="#4a3426"/></g>
+  <g id="L2" data-s=".1"><path id="r2" fill="#33241a"/></g>
+  <g id="L3" data-s=".16"><path id="r3" fill="#1f150f"/></g>
+  <circle id="glow" cx="720" cy="740" r="230" fill="url(#fg)"/>
+  <g transform="translate(720 790)">
+   <path class="fl" d="M-34 0C-44-34-12-44-20-82 6-62 16-40 10-60 40-30 34-10 30 0Z" fill="#d9531e"/>
+   <path class="fl" d="M-18 0C-26-24-4-30-8-56 12-40 20-22 18 0Z" fill="#f59a2e"/>
+   <path class="fl" d="M-8 0C-12-12 0-16-2-30 8-20 10-10 8 0Z" fill="#ffe08a"/>
+   <rect x="-60" y="-6" width="120" height="14" rx="6" fill="#120c08"/>
+  </g>
+ </svg>
+ <canvas id="snow"></canvas>
+ <svg id="compass" viewBox="0 0 100 100" aria-hidden="true">
+  <g id="ring" fill="none" stroke="#b08d57" stroke-width="1.5"><circle cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="40" stroke-dasharray="2 4"/>
+   <g fill="#b08d57" stroke="none" font-size="9" font-family="serif" text-anchor="middle"><text x="50" y="16">С</text><text x="86" y="53">В</text><text x="50" y="92">Ю</text><text x="14" y="53">З</text></g></g>
+  <g id="needle"><path d="M50 22L56 50 50 78 44 50Z" fill="#a0522d"/><path d="M50 22L56 50H44Z" fill="#e9dcc3"/></g><circle cx="50" cy="50" r="3" fill="#b08d57"/>
+ </svg>
+ <div class="wrap hero">
+  <p class="hand" id="cap" data-t="Москва · от Заполярья до вашего стола" style="margin:0 auto"></p>
+  <h1>Экспедиция<span>северная кухня</span></h1>
+  <p class="sub">Ресторан, где всё по-настоящему</p>
+  <div class="acts"><a class="btn" href="#booking" data-ev="book">Забронировать стол</a><a class="btn alt" href="#menu">Смотреть меню</a></div>
+ </div>
+</section>
+
+<section class="light" id="manifest" aria-label="Манифест">
+ <div class="wrap">
+  <p class="manifest rv">Мы не придумывали Север для ресторана. Мы вернулись с него.</p>
+  <p class="rv">Всё, что вы видите и пробуете, сделано и добыто своими руками.</p>
+  <div class="three">
+   <div class="frame rv"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M24 10l5 14-5 14-5-14z"/></svg><h3>Настоящее</h3><p>Продукты с Севера и от проверенных фермеров, без замен и имитаций.</p></div>
+   <div class="frame rv"><svg viewBox="0 0 48 48"><path d="M8 40l12-20 6 8 6-10 8 22z"/><path d="M14 40v-6M34 40v-6"/></svg><h3>Своими руками</h3><p>Коптим, солим, квасим, печём хлеб и собираем соусы сами.</p></div>
+   <div class="frame rv"><svg viewBox="0 0 48 48"><path d="M24 6c6 8 12 12 12 22a12 12 0 01-24 0c0-6 4-8 6-14 2 3 4 4 6-8z"/></svg><h3>Тепло очага</h3><p>Холод остался за дверью, у нас огонь, дерево и меха.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="dark" id="history">
+ <div class="wrap">
+  <p class="hand">шесть записей из полевого журнала</p>
+  <h2>Дневник экспедиции</h2>
+  <div class="diary">
+   <article class="page rv"><span class="hand">I</span><h3>Выход</h3><p>Несколько человек отправились в экспедицию на Крайний Север. Обычный маршрут, обычный план, у каждого дела в городе.</p></article>
+   <article class="page rv"><span class="hand">II</span><h3>Сорок часов тишины</h3><p>Они оказались в чрезвычайно тяжёлом положении, за 300 километров до ближайшего населённого пункта. Связь была слабой, помощь далеко. Они ждали вертолёт.</p></article>
+   <article class="page rv"><span class="hand">III</span><h3>Вертолёт не прилетел</h3><p>Шли дни. Люди добывали еду, обустраивали нехитрый ночлег. Городские жители учились выживать в суровых условиях Заполярья.</p></article>
+   <article class="page rv"><span class="hand">IV</span><h3>О тех, кто здесь родился</h3><p>Там, на краю Земли, они думали о том, как живут люди, для которых Север дом. Как они едят, как строят, как берегут тепло и друг друга.</p></article>
+   <article class="page rv"><span class="hand">V</span><h3>Решение</h3><p>Если суждено выжить и вернуться в Москву, построить в столице ресторан, где всё будет по-настоящему. Созданное и добытое своими руками.</p></article>
+   <article class="page rv"><span class="hand">VI</span><h3>Возвращение</h3><p>Так появилась «Экспедиция».</p></article>
+  </div>
+  <div class="stampq rv">«Где всё по-настоящему»</div>
+  <h3 style="margin-top:64px">Что мы вынесли с Севера</h3>
+  <ul class="carry">
+   <li class="rv"><b>Уважение к продукту</b>Не прячем вкус за соусом.</li><li class="rv"><b>Простота</b>Огонь, соль, время.</li><li class="rv"><b>Общий стол</b>Здесь едят вместе.</li><li class="rv"><b>Ничего лишнего</b>Только то, что нужно в дороге.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="light" id="menu">
+ <div class="wrap">
+  <p class="hand">добыча</p>
+  <h2>Меню</h2>
+  <p>Выберите главу. Нажмите на карточку, чтобы увидеть состав и историю блюда.</p>
+  <div class="chips" id="chips" role="group" aria-label="Фильтр меню"></div>
+  <div id="grid" aria-live="polite"></div>
+  <p id="empty">В этой главе пока пусто. Попробуйте другую.</p>
+  <div class="menu-extra">
+   <button class="btn" id="pdf" type="button">Скачать меню в PDF</button>
+   <span class="demo" style="color:#6b5a4a">Аллергены: уточняйте у официанта. Цены демонстрационные.</span>
+  </div>
+ </div>
+</section>
+
+<section class="dark" id="space">
+ <div class="wrap">
+  <p class="hand">лагерь</p>
+  <h2>Пространство и события</h2>
+  <div class="zones">
+   <div class="rv"><h3>Основной зал</h3><p>Тёплый свет, длинные деревянные столы, меха на скамьях, карты на стенах.</p></div>
+   <div class="rv"><h3>Очаг</h3><p>Столы рядом с открытым огнём.</p></div>
+   <div class="rv"><h3>Штаб</h3><p>Отдельный кабинет на 8–12 человек, стол-карта.</p></div>
+   <div class="rv"><h3>Веранда</h3><p>Сезонно: пледы, чай, вид на двор.</p></div>
+  </div>
+  <h3>События</h3>
+  <ul class="events"><li>Банкеты и корпоративы до 60 человек</li><li>Дни рождения и семейные встречи</li><li>Вечера: «Строганина и настойки», «Дичь у огня», «Рассказы из экспедиции»</li><li>Мастер-классы: лепка пельменей, копчение рыбы</li></ul>
+  <button class="btn" id="openB" type="button">Запросить банкет</button>
+ </div>
+</section>
+
+<section class="light" id="team">
+ <div class="wrap">
+  <p class="hand">журнал участников</p>
+  <h2>Команда</h2>
+  <div class="team">
+   <article class="mem rv"><div class="seal">Ш</div><h3>Шеф-повар</h3><p class="hand" style="margin:0">позывной «Угли»</p><q>Продукт должен оставаться собой.</q></article>
+   <article class="mem rv"><div class="seal">О</div><h3>Основатель</h3><p class="hand" style="margin:0">участник той самой экспедиции</p><q>Мы вернулись, чтобы кормить так, как кормил нас Север.</q></article>
+   <article class="mem rv"><div class="seal">С</div><h3>Сомелье</h3><p class="hand" style="margin:0">позывной «Брусника»</p><q>Настойка — это способ сохранить лето до зимы.</q></article>
+   <article class="mem rv"><div class="seal">У</div><h3>Управляющий</h3><p class="hand" style="margin:0">позывной «Штурман»</p><q>Гость не должен замечать сервис, только тепло.</q></article>
+  </div>
+  <p class="demo" style="color:#6b5a4a;margin-top:20px">Имена и позывные вымышленные, демо.</p>
+ </div>
+</section>
+
+<section class="dark" id="booking">
+ <div class="wrap formbox rv">
+  <div class="side">
+   <h2>Стол ждёт вас у огня</h2>
+   <p>Оставьте заявку, мы позвоним в течение 15 минут и подтвердим стол.</p>
+   <p class="mono">+7 (495) 000-00-00</p>
+   <p>Для банкетов — предоплата, условия уточним по телефону (демо-текст).</p>
+  </div>
+  <div>
+   <form id="bf" novalidate>
+    <div class="f"><label for="bn">Имя</label><input id="bn" required minlength="2" data-m="Введите имя, минимум 2 буквы" autocomplete="name"><span class="er"></span></div>
+    <div class="f"><label for="bp">Телефон</label><input id="bp" type="tel" required pattern="[0-9+()\s\-]{10,}" data-m="Введите телефон, минимум 10 цифр" autocomplete="tel"><span class="er"></span></div>
+    <div class="f"><label for="bd">Дата</label><input id="bd" type="date" required data-m="Выберите сегодняшнюю или будущую дату"><span class="er"></span></div>
+    <div class="f"><label for="bt">Время</label><input id="bt" type="time" required min="12:00" data-m="Выберите время с 12:00"><span class="er"></span></div>
+    <div class="f"><label for="bg">Гостей</label><input id="bg" type="number" min="1" max="12" value="2" required data-m="От 1 до 12 гостей"><span class="er"></span></div>
+    <div class="f"><label for="bz">Зона</label><select id="bz"><option>Основной зал</option><option>Очаг</option><option>Штаб</option></select><span class="er"></span></div>
+    <div class="f w"><label for="bc">Комментарий</label><textarea id="bc" rows="2"></textarea><span class="er"></span></div>
+    <div class="f w chk"><input id="bk" type="checkbox" required data-m="Нужно согласие на обработку данных"><label for="bk">Согласен на обработку персональных данных</label></div>
+    <div class="f w"><span class="er" id="bke"></span><button class="btn" type="submit" data-ev="book">Забронировать стол</button></div>
+   </form>
+   <div class="ok" id="bok" role="status" tabindex="-1"><p>Заявка принята. Мы позвоним в течение 15 минут и подтвердим стол. Ждём вас у огня.</p><button class="btn alt" type="button" id="again" style="color:var(--choc)">Новая заявка</button></div>
+  </div>
+ </div>
+</section>
+
+<section class="light" id="contacts">
+ <div class="wrap contacts">
+  <div>
+   <p class="hand">как нас найти</p>
+   <h2>Контакты</h2>
+   <dl>
+    <dt>Адрес</dt><dd>Москва, ул. Северная, 12 (вымышленный)</dd>
+    <dt>Телефон</dt><dd><a class="mono" href="tel:+74950000000" data-ev="tel">+7 (495) 000-00-00</a></dd>
+    <dt>Почта</dt><dd><a href="mailto:hello@expedition-demo.ru">hello@expedition-demo.ru</a></dd>
+    <dt>Режим работы</dt><dd>Ежедневно 12:00–24:00, пт и сб до 02:00</dd>
+    <dt>Как добраться</dt><dd>Метро, парковка во дворе. Вход через арку, дверь с компасом.</dd>
+   </dl>
+   <p style="margin-top:22px"><a class="btn alt" target="_blank" rel="noopener" href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%B0%D1%8F%2C%2012">Открыть в Яндекс.Картах</a></p>
+  </div>
+  <div class="mapbox" role="img" aria-label="Схема: вход через арку во двор, дверь с компасом">
+   <svg viewBox="0 0 400 300"><rect width="400" height="300" fill="#efe2c8"/><g fill="none" stroke="#b08d57" opacity=".6"><ellipse cx="200" cy="150" rx="170" ry="110"/><ellipse cx="200" cy="150" rx="120" ry="75"/><ellipse cx="200" cy="150" rx="70" ry="40"/></g><path d="M0 230H400M120 0V300" stroke="#7e8f94" stroke-width="8" opacity=".5"/><path d="M40 270L120 230 200 170" fill="none" stroke="#a0522d" stroke-width="3" stroke-dasharray="7 6"/><circle cx="200" cy="165" r="9" fill="#a0522d"/><text x="214" y="160" font-family="Caveat,cursive" font-size="22" fill="#4a2f1d">мы здесь</text><text x="20" y="290" font-family="Courier Prime,monospace" font-size="13" fill="#4a2f1d">N 69°20′ E 88°12′</text></svg>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <a class="logo" href="#top"><b>ЭКСПЕДИЦИЯ</b><small>северная кухня</small></a>
+  <p style="margin-top:16px">Москва, ул. Северная, 12 · <a href="tel:+74950000000">+7 (495) 000-00-00</a> · ежедневно 12:00–24:00</p>
+  <p><a href="https://t.me/" target="_blank" rel="noopener">Telegram</a> · <a href="https://vk.com/" target="_blank" rel="noopener">VK</a> · <button type="button" id="openL">Политика конфиденциальности</button> · <button type="button" id="openT">Условия пользования</button></p>
+  <p class="mono demo">N 69°20′ E 88°12′</p>
+  <p class="hand">Экспедиция. Северная кухня. Где всё по-настоящему</p>
+  <p class="demo">Демо-сайт для портфолио. Все данные вымышленные.</p>
+ </div>
+</footer>
+
+<div class="mbar"><a class="btn" href="#booking">Забронировать</a><a class="btn alt" href="tel:+74950000000">Позвонить</a></div>
+
+<dialog id="dB" aria-labelledby="dBt">
+ <button class="x" type="button" data-close aria-label="Закрыть">×</button>
+ <h3 id="dBt">Запросить банкет</h3>
+ <form id="qf" novalidate>
+  <div class="f"><label for="qd">Дата</label><input id="qd" type="date" required data-m="Выберите дату"><span class="er"></span></div>
+  <div class="f"><label for="qg">Гостей</label><input id="qg" type="number" min="8" max="60" required data-m="От 8 до 60 гостей"><span class="er"></span></div>
+  <div class="f"><label for="qo">Повод</label><select id="qo"><option>Корпоратив</option><option>День рождения</option><option>Семейная встреча</option><option>Другое</option></select><span class="er"></span></div>
+  <div class="f"><label for="qp">Телефон</label><input id="qp" type="tel" required pattern="[0-9+()\s\-]{10,}" data-m="Введите телефон, минимум 10 цифр"><span class="er"></span></div>
+  <div class="f w"><button class="btn" type="submit">Отправить запрос</button></div>
+ </form>
+ <div class="ok" id="qok" role="status"><p>Запрос принят. Мы позвоним и обсудим банкет.</p><button class="btn alt" type="button" data-close style="color:var(--choc)">Закрыть</button></div>
+</dialog>
+<dialog id="dL" aria-labelledby="dLt">
+ <button class="x" type="button" data-close aria-label="Закрыть">×</button>
+ <h3 id="dLt">Политика конфиденциальности</h3>
+ <p>Демо-текст. Мы собираем имя, телефон и данные заявки только для подтверждения брони, не передаём их третьим лицам и удаляем по вашему запросу.</p>
+</dialog>
+<dialog id="dT" aria-labelledby="dTt">
+ <button class="x" type="button" data-close aria-label="Закрыть">×</button>
+ <h3 id="dTt">Условия пользования</h3>
+ <p class="demo" style="color:#6b5a4a">Демо-текст для сайта-портфолио.</p>
+ <h3 style="font-size:18px">1. Общие положения</h3><p>Сайт рассказывает о ресторане «Экспедиция. Северная кухня» и позволяет оставить заявку на бронь. Используя сайт, вы соглашаетесь с этими условиями.</p>
+ <h3 style="font-size:18px">2. Бронирование</h3><p>Заявка с сайта не гарантирует стол, пока мы не подтвердим её по телефону. Стол держим 15 минут после назначенного времени. Для банкетов нужна предоплата, её размер сообщим при подтверждении.</p>
+ <h3 style="font-size:18px">3. Отмена и перенос</h3><p>Отменить или перенести бронь можно по телефону не позднее чем за 2 часа до визита, для банкетов — за 3 дня.</p>
+ <h3 style="font-size:18px">4. Меню и цены</h3><p>Меню и цены на сайте могут отличаться от актуальных в зале. Блюда из сезонных продуктов меняются. О составе и аллергенах спрашивайте у официанта.</p>
+ <h3 style="font-size:18px">5. Материалы сайта</h3><p>Тексты, изображения и логотип принадлежат ресторану. Копировать их без разрешения нельзя.</p>
+ <h3 style="font-size:18px">6. Данные</h3><p>Как мы обращаемся с вашими данными, описано в политике конфиденциальности.</p>
+</dialog>
+<div id="cookie" role="region" aria-label="Куки"><span>Мы используем куки, чтобы сайт работал как надо.</span><button class="btn" type="button" id="ck">Принять</button></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.documentElement.classList.add('js');
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.i);toast.i=setTimeout(()=>t.classList.remove('on'),3200)};
+
+/* hero scene */
+(function(){
+ const ridge=(n,b,a,s)=>{let p='M0 800L0 '+b;for(let i=1;i<=n;i++){s=(s*9301+49297)%233280;p+=' L'+(i*1440/n)+' '+(b-s/233280*a)}return p+' L1440 800Z'};
+ const trees=(n,b,a,s)=>{let p='M0 800L0 '+b;for(let i=1;i<=n;i++){s=(s*9301+49297)%233280;p+=' L'+((i-.5)*1440/n)+' '+(b-a*(.5+s/233280/2))+' L'+(i*1440/n)+' '+b}return p+' L1440 800Z'};
+ $('#r1').setAttribute('d',ridge(9,470,170,7));$('#r2').setAttribute('d',ridge(14,560,110,19));$('#r3').setAttribute('d',trees(60,720,110,3));
+ const Ls=$$('#scene g[data-s]');
+ const cap=$('#cap'),t=cap.dataset.t;
+ if(RM)cap.textContent=t;else{let i=0;const k=setInterval(()=>{cap.textContent=t.slice(0,++i);if(i>=t.length)clearInterval(k)},55)}
+ const hero=$('#top');let vis=true;
+ new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(hero);
+ if(!RM)addEventListener('scroll',()=>{if(vis)Ls.forEach(g=>g.style.transform='translateY('+scrollY*g.dataset.s+'px)')},{passive:true});
+ const nd=$('#needle'),cp=$('#compass');
+ addEventListener('pointermove',e=>{const r=cp.getBoundingClientRect();nd.style.transform='rotate('+(Math.atan2(e.clientY-r.top-r.height/2,e.clientX-r.left-r.width/2)*180/Math.PI+90)+'deg)'});
+ const c=$('#snow'),x=c.getContext('2d');let W,H,F=[];
+ const rs=()=>{W=c.width=hero.clientWidth;H=c.height=hero.clientHeight;F=Array.from({length:W<600?50:100},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*2+.6,v:Math.random()*.6+.3,d:Math.random()*6}))};
+ rs();addEventListener('resize',rs);
+ if(!RM)(function a(){if(vis){x.clearRect(0,0,W,H);x.fillStyle='rgba(243,234,215,.75)';F.forEach(f=>{f.y+=f.v;f.d+=.01;f.x+=Math.sin(f.d)*.4;if(f.y>H){f.y=-5;f.x=Math.random()*W}x.beginPath();x.arc(f.x,f.y,f.r,0,7);x.fill()})}requestAnimationFrame(a)})();
+})();
+
+/* menu */
+const CH={z:'Первый привал',h:'У костра',r:'Река и море',d:'Тайга и тундра',s:'Сладкий привал',n:'Для согрева'};
+const ST={z:'Закуски мы готовим первыми: их можно подать без плиты, как на первом привале.',h:'Горячее варили на костре в одном котле, на всех.',r:'Рыбу брали из северных рек и холодного моря, а готовили на углях.',d:'Дичь и мясо — еда тайги и тундры, здесь их коптят и томят неспешно.',s:'Ягоды собирали летом и берегли для долгих вечеров.',n:'Напитки, которыми согревались у огня.'};
+const M=`z|Строганина из чира|Тонкая стружка мороженой рыбы, соль, перец, лук|150 г|1 100|fgp|добыто в тундре
+z|Оленина холодного копчения|Сыровяленая оленина, брусничный соус, ржаной чипс|120 г|1 350|f|из нашей коптильни
+z|Сало с чесноком|Домашнее, со ржаным хлебом, горчицей и солёными груздями|140 г|590||
+z|Мочёная морошка с творожным сыром|Ягода, мёд, кедровый орех|130 г|680|g|
+z|Сельдь по-северному|Слабосолёная, с горячим картофелем и укропом|180 г|720|gp|
+h|Уха из трёх видов рыбы|На костровом бульоне, с копчёной щукой|350 мл|780|gp|на костровом бульоне
+h|Похлёбка из оленины|С корнеплодами и можжевельником|350 мл|850|g|
+h|Пельмени с олениной|Ручная лепка, сметана, бульон|250 г|980||
+r|Омуль на углях|Целиком, лимон, лук, ржаные сухарики|300 г|1 650|fp|
+r|Сиг запечённый|Корнеплоды, сливочный соус с хреном|280 г|1 480|g|
+r|Палтус на гриле|Пюре из пастернака, икра сельди|220 г|1 950|gp|
+r|Голец в ржаной корочке|Соус из облепихи|250 г|1 720||
+d|Стейк из оленины|Брусничный глейс, картофельный гратен|250 г|2 450|fg|добыто в тайге
+d|Утка с клюквой|Томлёная ножка, грудка на гриле, клюквенный соус|300 г|1 850|g|
+d|Тетерев с можжевельником|Запечённый, кедровая каша|280 г|2 100||
+d|Говядина томлёная в печи|Корнеплоды, чёрный перец, ржаной хлеб|300 г|1 560||
+s|Морошка со сливками|Ягода, сливки, медовый крамбл|160 г|650||
+s|Пирог с брусникой|Тёплый, с мороженым из сметаны|180 г|590||
+s|Кедровый торт|Ореховые коржи, сливочный крем|140 г|620||
+n|Сбитень на травах и мёде|Горячий, пряный|по карте|380|gp|
+n|Морсы|Клюква, брусника, облепиха|по карте|350|gp|
+n|Настойки собственного производства|Кедровые орехи, клюква, можжевельник, 50 мл|50 мл|420|g|делаем сами`.split('\n').map(l=>{const a=l.split('|');return{c:a[0],n:a[1],d:a[2],w:a[3],p:a[4],t:a[5],h:a[6]}});
+const FL=[['Всё',()=>1],['Закуски',d=>d.c=='z'],['Горячее',d=>d.c=='h'],['Рыба',d=>d.c=='r'],['Дичь',d=>d.c=='d'],['Десерты',d=>d.c=='s'],['Напитки',d=>d.c=='n'],['Безглютеновое',d=>d.t.includes('g')],['Постное',d=>d.t.includes('p')]];
+const TG={f:'фирменное',g:'без глютена',p:'постное'};
+function draw(i){
+ const g=$('#grid'),L=M.filter(FL[i][1]);
+ g.innerHTML=L.map(d=>`<button class="card" type="button" aria-pressed="false"><span class="in"><span class="face"><span class="hand">${CH[d.c]}</span><h3>${d.n}</h3><p>${d.d}</p><span class="tags">${[...d.t].map(k=>`<span class="tag ${k}">${TG[k]}</span>`).join('')}</span>${d.h?`<span class="hand" style="font-size:1.2em">${d.h}</span>`:''}<span class="meta"><span class="wt">${d.w}</span><span class="price">${d.p} ₽</span></span></span><span class="face back"><h3>Состав</h3><p>${d.d}.</p><h3 style="margin-top:10px">История</h3><p>${ST[d.c]}</p><span class="hint">Нажмите, чтобы вернуть</span></span></span></button>`).join('');
+ $('#empty').style.display=L.length?'none':'block';
+ $$('.chip').forEach((c,j)=>c.setAttribute('aria-pressed',j==i));
+}
+$('#chips').innerHTML=FL.map((f,i)=>`<button class="chip" type="button" data-i="${i}">${f[0]}</button>`).join('');
+$('#chips').onclick=e=>{const b=e.target.closest('.chip');if(b)draw(+b.dataset.i)};
+$('#grid').onclick=e=>{const c=e.target.closest('.card');if(c){c.classList.toggle('flip');c.setAttribute('aria-pressed',c.classList.contains('flip'))}};
+draw(0);
+$('#pdf').onclick=()=>{let o='<h1>Экспедиция. Северная кухня</h1><p>Меню. Демо, цены вымышленные.</p>';Object.keys(CH).forEach(k=>{o+='<h2>'+CH[k]+'</h2>'+M.filter(d=>d.c==k).map(d=>'<div class="r"><span><b>'+d.n+'</b><br><small>'+d.d+', '+d.w+'</small></span><b>'+d.p+' ₽</b></div>').join('')});o+='<p><small>Аллергены уточняйте у официанта.</small></p>';let p=$('#pm');if(!p){p=document.createElement('div');p.id='pm';document.body.append(p)}p.innerHTML=o;toast('В окне печати выберите «Сохранить как PDF»');setTimeout(()=>print(),500)};
+
+/* nav, spy, progress */
+const nav=$('#nav'),bg=$('#burger');
+const tog=o=>{nav.classList.toggle('open',o);bg.setAttribute('aria-expanded',o);bg.firstElementChild.firstElementChild.setAttribute('d',o?'M5 5l14 14M19 5L5 19':'M4 7h16M4 12h16M4 17h16');nav.closest('header').classList.toggle('open',o);bg.setAttribute('aria-label',o?'Закрыть меню':'Открыть меню')};
+bg.onclick=()=>tog(!nav.classList.contains('open'));
+nav.onclick=e=>{if(e.target.closest('a'))tog(false)};
+addEventListener('keydown',e=>{if(e.key=='Escape')tog(false)});
+const S=[['top','Базовый лагерь'],['history','История'],['menu','Меню'],['space','Пространство'],['team','Команда'],['booking','Бронь'],['contacts','Контакты']];
+const rail=$('#rail');
+S.forEach(([id,n],i)=>{const a=document.createElement('a');a.href='#'+id;a.style.top=(i/(S.length-1)*100)+'%';a.innerHTML='<span>'+n+'</span>';a.setAttribute('aria-label',n);rail.append(a)});
+const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const id=e.target.id;$$('nav a[href^="#"],#rail a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')=='#'+id))}}),{rootMargin:'-45% 0px -50% 0px'});
+S.forEach(([id])=>spy.observe($('#'+id)));
+let tk=0;addEventListener('scroll',()=>{if(!tk){tk=1;requestAnimationFrame(()=>{tk=0;document.documentElement.style.setProperty('--p',Math.min(1,scrollY/(document.documentElement.scrollHeight-innerHeight||1)).toFixed(3))})}},{passive:true});
+const rv=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in2');rv.unobserve(e.target)}}),{threshold:.15});
+$$('.rv').forEach(el=>rv.observe(el));
+
+/* forms */
+const today=new Date();today.setMinutes(today.getMinutes()-today.getTimezoneOffset());
+$$('input[type=date]').forEach(i=>i.min=today.toISOString().slice(0,10));
+function validate(f){let ok=true,first;$$('input,select,textarea',f).forEach(el=>{const er=el.closest('.f').querySelector('.er');const bad=!el.checkValidity();if(er)er.textContent=bad?(el.dataset.m||'Заполните поле'):'';el.setAttribute('aria-invalid',bad);if(bad){ok=false;first=first||el}});if(first)first.focus();return ok}
+$$('form').forEach(f=>f.addEventListener('input',e=>{if(e.target.getAttribute('aria-invalid')=='true')validate(f)}));
+$('#bf').onsubmit=e=>{e.preventDefault();if(!validate(e.target))return;e.target.style.display='none';const o=$('#bok');o.style.display='block';o.focus();toast('Заявка отправлена (демо)')};
+$('#again').onclick=()=>{const f=$('#bf');f.reset();f.style.display='grid';$('#bok').style.display='none';$('#bn').focus()};
+$('#qf').onsubmit=e=>{e.preventDefault();if(!validate(e.target))return;e.target.style.display='none';$('#qok').style.display='block'};
+const dB=$('#dB'),dL=$('#dL');
+$('#openB').onclick=()=>{$('#qf').style.display='grid';$('#qok').style.display='none';$('#qf').reset();dB.showModal()};
+$('#openL').onclick=()=>dL.showModal();
+$('#openT').onclick=()=>$('#dT').showModal();
+$$('[data-close]').forEach(b=>b.onclick=()=>b.closest('dialog').close());
+$$('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target==d)d.close()}));
+
+/* cookies */
+const ck=$('#cookie');let seen=0;try{seen=localStorage.getItem('ck')}catch(e){}
+if(!seen)setTimeout(()=>ck.style.display='flex',1200);
+$('#ck').onclick=()=>{ck.style.display='none';try{localStorage.setItem('ck','1')}catch(e){}};
+</script>
+</body>
+</html>
